@@ -1,0 +1,47 @@
+:root {
+  --bg: #c0d5f7;
+  
+  --gap: 3vmin;
+  --button-height:10vmin;
+  --button-width:25vmin;
+  --border-radius: 0.5vmin;
+  --text-color: #ffffff;
+  --bg-button:#0424f7;
+  --font-size: 3vmin;
+  --border-color: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.button {
+  display: button;
+  height: var(--button-height);
+  width: var(--button-width);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  background-color: var(--bg-button);
+  font-size: var(--font-size);
+  cursor: pointer;
+  border-color: var(--border-color)
+}
