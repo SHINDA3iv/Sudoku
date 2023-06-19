@@ -1,12 +1,12 @@
 import { GRID_SIZE, BOX_SIZE  } from "./utilities.js";
 
 export function generateSudoku() {
-  const sudoku = createEmpryGrid();
+  const sudoku = createEmptyGrid();
   resolveSudoku(sudoku);
   return removeCells(sudoku);
 }
 
-function createEmpryGrid() {
+function createEmptyGrid() {
   return new Array(GRID_SIZE).fill().map(() => new Array(GRID_SIZE).fill(null));
 }
 

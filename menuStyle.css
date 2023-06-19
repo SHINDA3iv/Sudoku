@@ -8,6 +8,7 @@
   --text-color: #ffffff;
   --bg-button:#0424f7;
   --font-size: 3vmin;
+  --font-size-head: 4vmin;
   --border-color: #000000;
 }
 
@@ -27,8 +28,19 @@ body {
   user-select: none;
 }
 
+.head {
+  display: block;
+  position: relative;
+  bottom: 80px;
+  right:20px;
+  font-size: var(--font-size-head);
+}
+
 .wrap {
   display: flex;
+  position: relative;
+  bottom:5px;
+  left:20px;
   flex-direction: column;
   justify-content: center;
   gap: var(--gap);
